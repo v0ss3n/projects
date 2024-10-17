@@ -2,7 +2,7 @@
   Blink
 
   Turns on an LED for one second, then off for one second, repeatedly.
-  Connect + of the LED through a 220 Ohm resistor to GPIO 0
+  Connect + of the LED through a 220 Ohm resistor to pin A0
   Connect - of the LED to GND
 
   modified 8 May 2014
@@ -21,7 +21,7 @@
   https://v0ss3n.github.io/projects/education/wearables 
 */
 
-int LED_pin = 0; // Pin the LED is attached to
+int LED_pin = A0; // Pin the LED is attached to
 
 // the setup function runs once when you press reset or power the board
 void setup() {

@@ -1,8 +1,7 @@
 /*
   Fade LED with analogWrite
 
-  Turns on an LED when touch pin 1 is touched
-  Connect + of the LED through a 220 Ohm resistor to GPIO 0
+  Connect + of the LED through a 220 Ohm resistor to pin A0
   Connect - of the LED to GND
 
   example modified 13 Oct 2024
@@ -19,7 +18,7 @@
 
 */
 
-int LED_pin = 0;  // Pin the LED is attached to
+int LED_pin = A0;  // Pin the LED is attached to
 
 int brightness = 0;  // how bright the LED is
 int fadeAmount = 5;  // how many points to fade the LED by
