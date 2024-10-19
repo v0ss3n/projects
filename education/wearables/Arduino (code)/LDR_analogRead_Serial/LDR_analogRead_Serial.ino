@@ -20,10 +20,14 @@
 */
 
 int sensor_pin = A1;
+int LED_pin = A0;    // Pin the LED is attached to
+int brightness = 0;  // how bright the LED is
+
 // the setup routine runs once when you press reset:
 void setup() {
   // initialize serial communication at 115200 bits per second:
   Serial.begin(115200);
+  pinMode(LED_pin, OUTPUT);
 }
 
 // the loop routine runs over and over again forever:
@@ -31,6 +35,15 @@ void loop() {
   // read the input on analog pin 0:
   int sensorValue = analogRead(sensor_pin);
   // print out the value you read:
+  Serial.println("Reading of sensor A1:");
   Serial.println(sensorValue);
+  // the min and max values for the LDR depend on the light conditions and the interaction you want to achieve. the min and max values for the LED range from 0-255
+  brightness = map(sensorValue, 2500, 4095, 0, 255);
+  brightness = constrain(brightness, 0, 255);
+  Serial.println("Mapped brightness value:");
+  Serial.println(brightness);
+  analogWrite(LED_pin, brightness);
+
+
   delay(1);  // delay in between reads for stability
 }
