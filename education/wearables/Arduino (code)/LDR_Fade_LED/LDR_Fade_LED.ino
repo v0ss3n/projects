@@ -1,13 +1,16 @@
 /*
   Map LDR input to LED output
 
-  Reads an analog input on pin A1, prints the result to the Serial Monitor.
-  Graphical representation is available using Serial Plotter (Tools > Serial Plotter menu).
+  Reads an analog input on pin A1, and maps it to LED brightness with PWM. 
+  Also prints the result to the Serial Monitor.
 
-  Connect one leg of the LDR to pin A1, and through a 10k Ohm resistor to +3.3V (this way, 
+  Connect + of the LED through a 220 Ohm resistor to pin A0
+  Connect - of the LED to GND
+
+  Connect one leg of the LDR to pin A1, and through a 10k Ohm resistor to ground (this way, 
   we're making a voltage divider). Depending on the LDR value range you may need to increase 
   or decrease the resistor value.
-  Connect the other leg of the LDR to ground
+  Connect the other leg of the LDR to +3.3V
   
   Other options for this code:
   - Attach the center pin of a potentiometer to pin A0, and the outside pins to +3.3V and ground.
@@ -19,8 +22,8 @@
   https://www.arduino.cc/en/Tutorial/BuiltInExamples/AnalogReadSerial
 */
 
-int sensor_pin = A1;  // Pin the LDR is attached to
 int LED_pin = A0;     // Pin the LED is attached to
+int sensor_pin = A1;  // Pin the LDR is attached to
 int brightness = 0;   // how bright the LED is
 
 // the setup function runs once when you press reset or power the board
