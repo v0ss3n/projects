@@ -18,7 +18,7 @@
   https://v0ss3n.github.io/projects/education/wearables 
 */
 
-int speaker_pin = D0;    // Pin the LED is attached to
+int speaker_pin = D0;    // Pin the speaker is attached to
 int touch_pin = T2;  // Pin that we're going to touch
 int pitch;
 

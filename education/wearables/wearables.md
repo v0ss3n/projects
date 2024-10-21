@@ -25,7 +25,7 @@ End of day 2 goals:
 
 ------------------------------------
 
-
+## Developing your wearable art concept 
 ### How to make things wearable?
 
 0. What's your inspiration/reference? What's the concept, what do you want to say with your wearable piece of art? 
@@ -39,6 +39,7 @@ End of day 2 goals:
         
 
 
+----
 
 ## Hardware & software
 
@@ -70,6 +71,8 @@ Input:
 - Proximity sensor
 - Self made sensor, with something like Velostat or a e-textile crafted sensor
 
+-------
+
 ## Setting up the Arduino IDE
 In these examples we're using a [Seeed Studio XIAO ESP32S3](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/). Their wiki is a great place to get started and acquainted with all of the possibilities this tiny development board has to offer. 
 
@@ -78,7 +81,7 @@ In these examples we're using a [Seeed Studio XIAO ESP32S3](https://wiki.seeedst
 For a quick start, follow these steps in the Arduino IDE (assuming you have it installed already; if not, download the latest stable version and launch it):
 
 1. Navigate to ```File > Preferences```, and paste this URL in the 'Additional Boards Manager URLs': <https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
-2. Now, navigate to ```Tools > Board > Boards Manager...```, type the keyword "esp32" in the search box, select the latest version of esp32, and install it.
+2. Now, navigate to ```Tools > Board > Boards Manager...```, type the keyword "esp32" in the search box, select 2.0.17 (the latest version, 3.x.x, are not working with the ESP32Servo library) and install it.
 3. Plug in your board and select the board and port from the dropdown menu in the top left of the interface. Click on 'Select other board and port' and look for the XIAO_ESP32S3. 
 
 ![](arduino-ide.board.png)
@@ -120,3 +123,45 @@ Input and output:
 Nice to haves:
 - How to make a voltage divider with e-textiles
 - Wireless communication (but too hard to start with)
+
+## Resources
+- <https://docs.espressif.com/projects/arduino-esp32/en/latest/api/touch.html>
+
+----
+
+## Tools, techniques, machines & materials
+Prototyping materials and techniques
+- air drying modeling clay: clay modeling techniques & tools
+- metal wire: jewelry making techniques, soldering 
+- fabric & thread: sewing, textile craft techniques
+- conductive fabric: soldering 
+
+Creating three dimensional shapes with
+- metal wire
+- color filter sheets
+- sewing machine zigzag
+
+- Fabric
+- Textile hardener
+
+- Cardboard
+- Hot glue
+
+- Paper
+- Origami & other folding techniques
+
+- Paper
+- Papier-mâché
+
+- Metal wire frame
+- Wrapping stretchy fabric around it
+
+
+
+Step - drawing out system of input and output before programming
+
+
+
+- Embedding electronic components in clay
+- Sewing LEDs onto fabric 
+- Glueing 
