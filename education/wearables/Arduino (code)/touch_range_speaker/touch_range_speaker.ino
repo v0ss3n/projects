@@ -24,13 +24,13 @@ int pitch;
 
 // variable for storing the touch pin value and threshold. change threshold if needed
 int touchValue;
-int threshold = 100000;
+int threshold = 75000; // threshold
 
 // the setup function runs once when you press reset or power the board
 void setup() {
   // initialize serial communication at 115200 bits per second:
   Serial.begin(115200);
-  // initialize LED_pin as an output
+  // initialize speaker_pin as an output
   pinMode(speaker_pin, OUTPUT);
 }
 
@@ -38,20 +38,18 @@ void setup() {
 void loop() {
   touchValue = touchRead(touch_pin);
   Serial.println(touchValue);
-  // the min and max values for the LDR depend on the light conditions and the interaction you want to achieve. the min and max values for the LED range from 0-255
-  // we want to constrain the touchValue range, so the pitch also stays within the useful range. You could also constrain the pitch values, but constraining the touchValue
-  // effectively does the same for us
+  // constrain touchValue range for useful pitch generation
   touchValue = constrain(touchValue, 50000, 200000);
-  pitch = map(touchValue, 50000, 200000, 31, 4978);
+  pitch = map(touchValue, 50000, 200000, 31, 2000);  // set max pitch to 2000 to avoid errors with ledc timer
 
   Serial.println(pitch);
 
-  // If the touchValue is over the threshold, we want to hear a tone:
+  // Play tone if touchValue exceeds threshold
   if (touchValue > threshold) {
     tone(speaker_pin, pitch);
+  } else {
+    noTone(speaker_pin);  // Stop tone when under threshold
   }
 
-  // If the touchValue is under the threshold, we don't want to hear anything:
-  noTone(speaker_pin);
   delay(50);
 }

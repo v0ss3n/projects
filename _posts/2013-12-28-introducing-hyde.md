@@ -1,3 +1,9 @@
+---
+layout: post
+title: Wearable art
+permalink: "/wearable-art/"
+---
+
 # Wearables
 You can already make electronic wearables without a microcontroller. For example, you can use a coin cell battery (and optional coin cell battery holder with on/off switch) and an LED or LED filament and make something that emits light. You can even make it interactive by introducing an LDR (light dependent resistor) to the mix. But once you start using a microcontroller and programming, the sky is the limit!
 
@@ -50,7 +56,10 @@ Starting with going around what everyone has worked on
 End with show
 
 ------------------------------------
+## Kit
+![](../assets/images/electronics-kit.JPEG)
 
+-----
 ## Developing your wearable art concept 
 ### How to make things wearable?
 
@@ -113,7 +122,7 @@ For a quick start, follow these steps in the Arduino IDE (assuming you have it i
 2. Now, navigate to ```Tools > Board > Boards Manager...```, type the keyword "esp32" in the search box, select 2.0.17 (the latest version, 3.x.x, are not working with the ESP32Servo library) and install it.
 3. Plug in your board and select the board and port from the dropdown menu in the top left of the interface. Click on 'Select other board and port' and look for the XIAO_ESP32S3. 
 
-![](arduino-ide.board.png)
+![](../assets/images/arduino-ide-board.png)
 
 That should be it! Now you can start uploading the example code or write your own. One thing to keep in mind with ESP32s is that sometimes they're in the wrong mode for programming. You can get back to boot mode by unplugging the board, then pressing and holding down the boot button on the board, then plugging it back in. Now it should work again :-)
 

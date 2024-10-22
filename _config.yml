@@ -1,0 +1,30 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Wearables
+tagline:          'Projects for education'
+description:      'Description'
+url:              https://github.com/v0ss3n/projects
+baseurl:          /
+
+author:
+  name:           'Michelle Vossen'
+  url:            https://michellevossen.com
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/v0ss3n/projects
+
+include: ['_posts']
+plugins: [jekyll-paginate]
+relative_permalinks: false

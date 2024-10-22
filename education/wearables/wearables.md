@@ -6,9 +6,30 @@ You can already make electronic wearables without a microcontroller. For example
 ## Workshop planning
 **Workshop day 1 - 13:00-17:00**
 
+Workshop day 1 | 13:00-17:00
+--- | ---
+13:00-13:15 | Walk in, welcome
+13:15-13:45 | Introduction & presentation (examples of possible inputs/outputs, wearable fabrication techniques, interactions)
+13:45-14:15 | Ideation, brainstorming, sketching
+14:15-15:00 | Electronics & Arduino programming crash course focusing on your wishes! If you know electronics/programming already: get started!
+15:00-15:15 | Break
+15:15-16:45 | Prototyping circuits and (parts of) the wearable work of art
+16:45-17:00 | Show & tell, clean up
+
+Workshop day 2 | 13:00-17:00
+--- | ---
+13:00-13:15 | Walk in, welcome, what do you need to get started?
+13:15-15:00 | Working on bringing the wearable art to life: bringing electronics & shapes together, making it wearable, integrating the circuit
+15:00-15:15 | Break
+15:15-16:30 | Finalizing prototypes: testing, troubleshooting, finishing touches 
+16:30-17:00 | Wearable art show! Documenting results & reflecting on the process
+
+
+
 Learning goal | How
 --- | ---
-Designing wearables in 3D | Prototyping with various available materials and 3D techniques
+Designing wearable things in 3D | Prototyping with various available materials and 3D techniques
+Making electronics wearable | Integrating electronic circuits, using portable power options
 Programming basics in Arduino IDE | Arduino IDE crash course - walkthrough for beginners
 Basics of electronics | 'Sketching in hardware': prototyping electronics and learning by doing, trying out different inputs/outputs or deep diving into one
 
@@ -18,10 +39,15 @@ End of day 1 goals:
 - parts of the wearable without electronics done
 - working programmed electronics (doesn't have to be wireless, soldered or final yet, just a first working iteration)  
 
+
 **Workshop day 2 - 13:00-17:00**
 End of day 2 goals:
 - Making electronics wearable (starting together with this)
 - 
+
+Starting with going around what everyone has worked on
+
+End with show
 
 ------------------------------------
 
@@ -38,6 +64,9 @@ End of day 2 goals:
     - Build on something existing - i.e. on a glove or head band
         
 
+### Making electronic circuits wearable
+
+-  Hiding in plain sight, making the circuit part of the 
 
 ----
 
@@ -96,31 +125,32 @@ To prototype wearables, we're going to use the Grove Shield for XIAO, which make
 To start out, we'll use the shield as a prototyping board. You can plug in female jumper wires into the sockets to connect the data pins to your inputs and outputs, you can solder wires to the GPIO holes or you can solder sockets into the GPIO holes to plug in jumper wires for modularity.
 
 #### Example Arduino code
-Example code can be found in the ```Arduino (code)``` folder.
+Example code can be found in the ```Arduino (code)``` folder. You can find the following examples:
 
+Programmed input:
 - Blinking an LED (output, digitalWrite)
 - Fading an LED (analogWrite, PWM)
-- Turning on an LED with touch (touchRead, using input to do something with output, while statement)
-- Toggling an LED with touch (if/else statement)
+
+Digital input:
+
+- TO DO (using internal pullup resistor)
+
+Analog input:
 - Reading LDR sensor data (serial monitor)
-- Using sensor data to dim LED (mapping input values to output values)
-- Lighting up Neopixels (libraries)
+- Using LDR sensor data to fade LED (mapping input values to output values)
+- Using LDR sensor data to light up Neopixels (libraries)
 - Sweeping a servo
 
-## Examples
-Output only:
-- Servo motor
-- LED (works for LED and LED filament)
-- Neopixels
-- Speaker
-
-Input and output:
-- Touch input > LED output
-- Switch input > LED output
-- LDR input > neopixel output
-- LDR input > servo motor output (works for continuous and 180 degree servo motors)
+Touch input:
+- Turning on an LED with touch (touchRead, using input to do something with output, while statement)
+- Toggling an LED with touch (if/else statement)
+- Fading an LED with touch (touchRead, mapping capacitance ranges)
+- Mapping a capacitance range to tones on a speaker (tone)
+- Using touch pins to make a keyboard (multiple pins, arrays)
 
 Nice to haves:
+
+If you've made the circuit with an LDR, it's only one step further to connect your own, self made sensor! Take out the LDR, and stick one jumper wire to alligator clip in each 
 - How to make a voltage divider with e-textiles
 - Wireless communication (but too hard to start with)
 
