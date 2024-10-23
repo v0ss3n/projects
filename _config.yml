@@ -1,6 +1,6 @@
 # Dependencies
 markdown:         kramdown
-highlighter:      pygments
+highlighter:      rouge
 
 # Permalinks
 permalink:        pretty
@@ -9,8 +9,8 @@ relative_permalinks: true
 # Setup
 title:            Wearables
 tagline:          'Projects for education'
-description:      'Description'
-url:              https://github.com/v0ss3n/projects
+description:      'Wearable electronics playground'
+url:              https://github.com/v0ss3n/projects/
 baseurl:          /
 
 author:
