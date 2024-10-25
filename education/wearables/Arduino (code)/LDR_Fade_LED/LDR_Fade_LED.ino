@@ -4,13 +4,13 @@
   Reads an analog input on pin A1, and maps it to LED brightness with PWM. 
   Also prints the result to the Serial Monitor.
 
-  Connect + of the LED through a 220 Ohm resistor to pin A0
+  Connect + of the LED through a 68 Ohm resistor to pin A0
   Connect - of the LED to GND
 
-  Connect one leg of the LDR to pin A1, and through a 10k Ohm resistor to ground (this way, 
+  Connect one leg of the LDR to pin A1. Also connect A1 through a 4.7k Ohm resistor to +3.3V (this way, 
   we're making a voltage divider). Depending on the LDR value range you may need to increase 
   or decrease the resistor value.
-  Connect the other leg of the LDR to +3.3V
+  Connect the other leg of the LDR to ground
   
   Other options for this code:
   - Attach the center pin of a potentiometer to pin A0, and the outside pins to +3.3V and ground.

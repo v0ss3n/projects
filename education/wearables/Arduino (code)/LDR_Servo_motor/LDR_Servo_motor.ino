@@ -1,20 +1,20 @@
 /*
   Map LDR input to servo motor output
 
-  Reads an analog input on pin A0, and maps it to servo motor angle (fixed angle versions) or speed (continuous rotation versions). 
+  Reads an analog input on pin A1, and maps it to servo motor angle (fixed angle versions) or speed (continuous rotation versions). 
   Also prints the result to the Serial Monitor.
 
   Ideally, we're powering a micro servo with a stand-alone power supply, but
   with a micro servo and not too much weight, we can hopefully get away with powering it
   like this :-)
-  Connect the orange wire of the servo motor to pin A1
+  Connect the orange wire of the servo motor to pin A0
   Connect the red wire of the servo motor to +3.3V
   Connect the black wire of the servo motor to GND
 
-  Connect one leg of the LDR to pin A1, and through a 10k Ohm resistor to ground (this way, 
+  Connect one leg of the LDR to pin A1. Also connect A1 through a 4.7k Ohm resistor to +3.3V (this way, 
   we're making a voltage divider). Depending on the LDR value range you may need to increase 
   or decrease the resistor value.
-  Connect the other leg of the LDR to +3.3V
+  Connect the other leg of the LDR to ground
   
   Other options for this code:
   - Attach the center pin of a potentiometer to pin A0, and the outside pins to +3.3V and ground.
@@ -33,8 +33,8 @@
 
 
 // Pin Definitions
-const int servo_pin = A1;  // Servo connected to A1
-const int sensor_pin = A0;    // LDR connected to A0
+const int servo_pin = A0;  // Servo connected to A1
+const int sensor_pin = A1;    // LDR connected to A0
 
 // Variables
 Servo myServo;       // Create a Servo object

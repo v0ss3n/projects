@@ -1,7 +1,7 @@
 /*
   Fade LED with analogWrite
 
-  Connect + of the LED through a 220 Ohm resistor to pin A0
+  Connect + of the LED through a 68 Ohm resistor to pin A0
   Connect - of the LED to GND
 
   example modified 13 Oct 2024

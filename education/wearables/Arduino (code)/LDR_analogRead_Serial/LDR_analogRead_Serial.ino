@@ -4,7 +4,7 @@
   Reads an analog input on pin A1, prints the result to the Serial Monitor.
   Graphical representation is available using Serial Plotter (Tools > Serial Plotter menu).
 
-  Connect one leg of the LDR to pin A1, and through a 10k Ohm resistor to +3.3V (this way, 
+  Connect one leg of the LDR to pin A1. Also connect A1 through a 4.7k Ohm resistor to +3.3V (this way, 
   we're making a voltage divider). Depending on the LDR value range you may need to increase 
   or decrease the resistor value.
   Connect the other leg of the LDR to ground

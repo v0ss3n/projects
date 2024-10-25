@@ -2,7 +2,7 @@
   Blink
 
   Turns on an LED for one second, then off for one second, repeatedly.
-  Connect + of the LED through a 220 Ohm resistor to pin A0
+  Connect + of the LED through a 68 Ohm resistor to pin A0
   Connect - of the LED to GND
 
   modified 8 May 2014

@@ -6,7 +6,7 @@
   the touch pin and reading the values in the serial monitor. Change 
   the threshold accordingly.
   
-  Connect + of the LED through a 220 Ohm resistor to pin A0
+  Connect + of the LED through a 68 Ohm resistor to pin A0
   Connect - of the LED to GND
   Connect a touch sensor to pin T2 (with an alligator clip for example)
 

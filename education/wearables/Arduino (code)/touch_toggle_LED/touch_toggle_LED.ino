@@ -4,7 +4,7 @@
   Turns on an LED when touch pin T2 is touched, and turn off when it's touched again. You first need 
   to figure out what is the touch threshold by touching and releasing the touch pin and reading the 
   values in the serial monitor. Change the threshold accordingly.
-  Connect + of the LED through a 220 Ohm resistor to GPIO 0
+  Connect + of the LED through a 68 Ohm resistor to GPIO 0
   Connect - of the LED to GND
   Connect a jumper wire to GPIO 1 (touch pin 1)
 
