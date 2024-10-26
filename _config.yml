@@ -10,7 +10,7 @@ relative_permalinks: true
 title:            Wearables
 tagline:          'Projects for education'
 description:      'Wearable electronics playground'
-url:              https://github.com/v0ss3n/projects
+url:              https://v0ss3n.github.io/projects
 baseurl:          
 
 author:
