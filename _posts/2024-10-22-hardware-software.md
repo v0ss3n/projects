@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hardware & software"
-permalink: "/projects/hardware-software/"
+permalink: "/hardware-software/"
 ---
 
 You can already make electronic wearables without a microcontroller. For example, you can use a coin cell battery (and optional coin cell battery holder with on/off switch) and an LED or LED filament and make something that emits light. You can even make it interactive by introducing an LDR (light dependent resistor) to the mix. But once you start using a microcontroller and programming, the sky is the limit!

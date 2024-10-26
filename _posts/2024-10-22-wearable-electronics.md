@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Developing your wearable art concept"
-permalink: "/projects/wearable-electronics/"
+permalink: "/wearable-electronics/"
 ---
 
 <div class="videowrapper"><video width="480" height="360" autoplay loop muted>

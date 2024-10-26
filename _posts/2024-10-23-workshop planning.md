@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Workshop planning"
-permalink: "/projects/wearable-art-workshop/"
+permalink: "/wearable-art-workshop/"
 ---
 
 # Introduction
