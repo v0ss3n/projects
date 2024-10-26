@@ -10,8 +10,8 @@ relative_permalinks: true
 title:            Wearables
 tagline:          'Projects for education'
 description:      'Wearable electronics playground'
-url:              https://github.com/v0ss3n/projects
-baseurl:          
+url:              https://github.com/v0ss3n/
+baseurl:          projects/
 
 author:
   name:           'Michelle Vossen'

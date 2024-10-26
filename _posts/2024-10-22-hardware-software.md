@@ -29,11 +29,19 @@ Here is a soldering comic adaptation by Andie Nordgren that shows you the basics
 
 ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmightyohm.com%2Fblog%2Fwp-content%2Fuploads%2F2011%2F03%2Fsoldercomic.jpg&f=1&nofb=1&ipt=ab44a191aa67f8a74805256fa1847385e93de5882761d39e64acefcd8c2913a0&ipo=images)
 
+And here another reference image:
+
+![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fkarpova-lab.github.io%2Fcerebro%2F_images%2Fsoldering101.png&f=1&nofb=1&ipt=5b2f9772211e9996c6db69681d4fab7e3212a858c1c28c8c6f8e5e3a342d7eca&ipo=images)
+
 We are going to bring this to action with the header pins of the XIAO board, so we can easily prototype electronic circuits:
 
 ![Soldering header pins]({{ site.baseurl }}/assets/images/soldering.png)
 
-You can also make a flexible LDR voltage divider like this:
+When soldering wires, make sure your connections are strong. 
+
+![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F2fCTMZk-E7c%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=6440de36019c5034153c4e121eaf48b8862d4deac43539b38f02e11990f6221b&ipo=images)
+
+You can make a flexible LDR voltage divider like this:
 
 ![]({{ site.baseurl }}/assets\images\IMG_8552.JPG)
 
