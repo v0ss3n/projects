@@ -6,9 +6,9 @@
   the touch pin and reading the values in the serial monitor. Change 
   the threshold accordingly.
   
-  Connect + of the speaker to pin D0
+  Connect + of the speaker to pin D7
   Connect - of the speaker to GND
-  Connect a touch sensor to pin T2 (with an alligator clip for example)
+  Connect a touch sensor to pin T1, T2, T3, T4, T5, T6 (with an alligator clip for example)
 
   made 18 Oct 2024
   by Michelle Vossen
