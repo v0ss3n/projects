@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Developing your wearable art concept"
-permalink: "/wearable-electronics/"
+permalink: "/projects/wearable-electronics/"
 ---
 
 <div class="videowrapper"><video width="480" height="360" autoplay loop muted>
@@ -22,7 +22,7 @@ There is a few ingredients to make a succesful wearable, and they all work toget
 
 There are various ways to make something wearable. You can use all kinds of clips, hairbands, gloves, velcro, straps... Below you can find some of the available options.
 
-![](../assets\images\IMG_8583.JPG)
+![]({{ site.baseurl }}/assets\images\IMG_8583.JPG)
 
 ## Tools, techniques, machines & materials
 To make your actual wearable, you can use various techniques - from quick cardboard prototyping with glue to sewing & jewelry making techniques. Below are some examples of materials and techniques to create 2D and 3D shapes to give shape to your wearable!
@@ -34,7 +34,7 @@ Creating three dimensional shapes with
 
 Set the sewing machine to zigzag and carefully start sewing:
 
-![](../assets/images\IMG_8528.JPG)
+![]({{ site.baseurl }}/assets/images\IMG_8528.JPG)
 
 - Metal wire 
 - Bending with plyers (see also <https://www.wikihow.com/Bend-Wire>)
@@ -82,13 +82,13 @@ Your wearable art has 3 ingredients:
 
 Here you can see these elements laid out: there is a microcontroller powered with a rechargeable LiPO battery, there is a headband to wear it on your head, and there is an eye antenna attached to the servo motor that can float in front of you like a deep sea fish. With these ingredients, you could glue the microcontroller and battery to a hair clip and hide it in a bun or under your hair, or you could make the wires longer and hide it a bit further away. 
 
-![](../assets\images\IMG_8521.JPG)
+![]({{ site.baseurl }}/assets\images\IMG_8521.JPG)
 
 ### Swaying necklace
 Another example to make something wearable is to make a necklace with a pouch like here. 
 
-![](../assets\images\IMG_8526.JPG)
-![](../assets\images\IMG_8584.JPG)
+![]({{ site.baseurl }}/assets\images\IMG_8526.JPG)
+![]({{ site.baseurl }}/assets\images\IMG_8584.JPG)
 
 The microcontroller and the battery fit in the pouch, and match with the swaying ribbon. This is an example of hiding the electronics in plain sight by making them match with the wearable.
 
@@ -99,9 +99,9 @@ The microcontroller and the battery fit in the pouch, and match with the swaying
 ### Swinging ring
 Now, if you want the movement on your hand instead, you could attach the motor to a glove, or in this case, bend metal wire to make a ring. 
 
-![](../assets\images\IMG_8574.JPG)
+![]({{ site.baseurl }}/assets\images\IMG_8574.JPG)
 
-![](../assets\images\IMG_8576.JPG)
+![]({{ site.baseurl }}/assets\images\IMG_8576.JPG)
 
 Here you can see it in action: 
 
@@ -111,16 +111,16 @@ Here you can see it in action:
 
 The electronics are simply hidden in my sleeve. I'm wearing them on my skin by sticking pieces of velcro to my arm and to the battery and microcontroller, so they easily come off if needed but they are still pretty stable. This is nice for prototyping. They could also be velcro'ed to a bracelet or sleeve. 
 
-![](../assets\images\IMG_8581.JPG)
+![]({{ site.baseurl }}/assets\images\IMG_8581.JPG)
 
 ### Interactive scarf
 In this next example (using the Arduino example LDR_NeoPixel_amount), the electronics can be hidden in the wearable object (a scarf) itself. 
 
-![](../assets\images\IMG_8556.JPG)
+![]({{ site.baseurl }}/assets\images\IMG_8556.JPG)
 
 The lights (Neopixels) need to go on the inside, but the LDR needs to be on the outside so it can detect lighting changes.
 
-![](../assets\images\IMG_8571.JPG)
+![]({{ site.baseurl }}/assets\images\IMG_8571.JPG)
 
 #### Interaction prototyping
 Here you can see it in action. Once you have a first prototype, you can start the prototyping the interaction that you want. There is plenty of ways to influence the amount of light on an LDR: covering it with your hand, walking into a darker area, putting something on top of it. Many things to try out!

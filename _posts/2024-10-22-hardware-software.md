@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Hardware & software"
-permalink: "/hardware-software/"
+permalink: "/projects/hardware-software/"
 ---
 
 You can already make electronic wearables without a microcontroller. For example, you can use a coin cell battery (and optional coin cell battery holder with on/off switch) and an LED or LED filament and make something that emits light. You can even make it interactive by introducing an LDR (light dependent resistor) to the mix. But once you start using a microcontroller and programming, the sky is the limit!
@@ -22,7 +22,7 @@ You all received a kit with the following content:
 
 Check if the content of your kit matches the picture below (approximately):
 
-![](../assets/images/electronics-kit.JPEG)
+![]({{ site.baseurl }}/assets/images/electronics-kit.JPEG)
 
 ## Soldering
 Here is a soldering comic adaptation by Andie Nordgren that shows you the basics of soldering:
@@ -35,9 +35,9 @@ We are going to bring this to action with the header pins of the XIAO board, so 
 
 You can also make a flexible LDR voltage divider like this:
 
-![](../assets\images\IMG_8552.JPG)
+![]({{ site.baseurl }}/assets\images\IMG_8552.JPG)
 
-![](../assets\images\IMG_8555.JPG)
+![]({{ site.baseurl }}/assets\images\IMG_8555.JPG)
 
 <!-- ## Hardware & software -->
 
@@ -78,14 +78,14 @@ For a quick start, follow these steps in the Arduino IDE (assuming you have it i
 2. Now, navigate to ```Tools > Board > Boards Manager...```, type the keyword "esp32" in the search box, select 2.0.17 (the latest version, 3.x.x, does not work with the ESP32Servo library) and install it.
 3. Plug in your board and select the board and port from the dropdown menu in the top left of the interface. Click on 'Select other board and port' and look for the XIAO_ESP32S3. 
 
-![](../assets/images/arduino-ide-board.png)
+![]({{ site.baseurl }}/assets/images/arduino-ide-board.png)
 
 That should be it! Now you can start uploading the example code or write your own. One thing to keep in mind with ESP32s is that sometimes they're in the wrong mode for programming. You can get back to boot mode by unplugging the board, then pressing and holding down the boot button on the board, then plugging it back in. Now it should work again :-)
 
 ## Basic setup
 To prototype wearables, we're going to use the Grove Shield for XIAO, which makes trying things out very easy. You can even charge your LiPO battery with the XIAO while it's on the shield, so you don't need a separate charger for it. It's plug and play and you can snap off the smaller part of the base if you don't need it. It snaps off easily:
 
-![](../assets\images\IMG_8524.JPG)
+![]({{ site.baseurl }}/assets\images\IMG_8524.JPG)
 
 You can always leave out the shield if it's too bulky for your final wearable once you know how you want to wire everything. 
 
@@ -93,7 +93,7 @@ You can always leave out the shield if it's too bulky for your final wearable on
 
 To start out, we'll use the shield as a prototyping board together with a breadboard. You can plug in female jumper wires into the sockets to connect the data pins to your inputs and outputs, you can solder wires to the GPIO holes or you can solder sockets into the GPIO holes (like below) to plug in jumper wires to plug & play! 
 
-![](../assets\images\IMG_8551.JPG)
+![]({{ site.baseurl }}/assets\images\IMG_8551.JPG)
 
 
 You can also just use the mini breadboard to start prototyping with, and leave the shield for later!
@@ -101,15 +101,15 @@ You can also just use the mini breadboard to start prototyping with, and leave t
 ### Battery use
 Please pay careful attention when plugging in the battery into the development shield: connect + to + and - to minus!
 
-![](../assets\images\IMG_8522.JPG)
+![]({{ site.baseurl }}/assets\images\IMG_8522.JPG)
 
 The battery is about the same size as the shield, so you could fold it like this and use velcro or double sided tape to stick them together. I wouldn't use glue since I'm not sure how it would react with the battery and the shield.
 
-![](../assets\images\IMG_8523.JPG)
+![]({{ site.baseurl }}/assets\images\IMG_8523.JPG)
 
 I would cover the bottom of the board with tape to avoid making any short circuits, for example if you want to glue a metal clip to the base to make it wearable.
 
-![](../assets\images\IMG_8527.JPG)
+![]({{ site.baseurl }}/assets\images\IMG_8527.JPG)
 
 ## Arduino code & circuits
 Example code can be found in the ```Arduino (code)``` folder. You can find examples on programmed and external, digital, analog and touch input, combined with light, motion or sound output. Below you can find how you should wire up the circuits on a breadboard. This is also described in the Arduino code files. Find out how they work in the Arduino code files too!
@@ -120,11 +120,11 @@ Example code can be found in the ```Arduino (code)``` folder. You can find examp
 
 Wire up your circuit on the breadboard like this:
 
-<!-- ![circuit](../assets\circuits\esp32s3_LED.png)
+<!-- ![circuit]({{ site.baseurl }}/assets\circuits\esp32s3_LED.png)
 
 Or directly on the breadboard like this: -->
 
-![circuit](../assets\circuits\esp32s3_LED-alt.png)
+![circuit]({{ site.baseurl }}/assets\circuits\esp32s3_LED-alt.png)
 
 Here is a video of what the output should be.
 
@@ -143,15 +143,15 @@ If you connect the LED to an ESP32S3 on a Grove shield, the result is the same:
 
 Wire up your circuit like below. 
 
-![circuit](../assets\circuits\esp32s3_LED_switch-alt-2.png)
+![circuit]({{ site.baseurl }}/assets\circuits\esp32s3_LED_switch-alt-2.png)
 
 <!-- If your microcontroller is on the Grove shield, you can also wire it like this. Pay attention to the top left column of the bread board: we are using this column to combine two wires that both have to go to ground, since there is only one ground pin on the ESP32S3.
 
-![circuit](../assets\circuits\esp32s3_LED_switch.png) -->
+![circuit]({{ site.baseurl }}/assets\circuits\esp32s3_LED_switch.png) -->
 
 <!-- Note that the above is exactly the same as this: 
 
-![circuit](../assets\circuits\esp32s3_LED_switch-alt.png) -->
+![circuit]({{ site.baseurl }}/assets\circuits\esp32s3_LED_switch-alt.png) -->
 
 ### Analog input
 - Reading LDR sensor data (serial monitor)
@@ -160,9 +160,9 @@ Wire up your circuit like below.
 
 For the LDR & LED examples, set up your circuit like below.
 
-![circuit](../assets\circuits\esp32s3-LED_LDR-alt.png)
+![circuit]({{ site.baseurl }}/assets\circuits\esp32s3-LED_LDR-alt.png)
 
-<!-- ![circuit](../assets\circuits\esp32s3-LED_LDR.png) -->
+<!-- ![circuit]({{ site.baseurl }}/assets\circuits\esp32s3-LED_LDR.png) -->
 
 Here you can see the expected interaction:
 
@@ -172,22 +172,22 @@ Here you can see the expected interaction:
 
 And for the Neopixel strip, wire it up like this:
 
-![circuit](../assets\circuits\esp32s3-neopixel_LDR-alt.png)
+![circuit]({{ site.baseurl }}/assets\circuits\esp32s3-neopixel_LDR-alt.png)
 
 Also an example when the ESP32S3 is on the Grove shield:
 
-![circuit](../assets\circuits\esp32s3-neopixel_LDR-alt-2.png)
+![circuit]({{ site.baseurl }}/assets\circuits\esp32s3-neopixel_LDR-alt-2.png)
 
 <!-- Here again the same circuit, but with the connections a little clearer:
 
-![circuit](../assets\circuits\esp32s3-neopixel_LDR.png) -->
+![circuit]({{ site.baseurl }}/assets\circuits\esp32s3-neopixel_LDR.png) -->
 
 - Sweeping a servo with LDR input (motion output)
 
 Wire up like this:
 
-![circuit](../assets\circuits\esp32s3-servo_LDR-alt.png)
-<!-- ![circuit](../assets\circuits\esp32s3-servo_LDR.png) -->
+![circuit]({{ site.baseurl }}/assets\circuits\esp32s3-servo_LDR-alt.png)
+<!-- ![circuit]({{ site.baseurl }}/assets\circuits\esp32s3-servo_LDR.png) -->
 
 As a wearable, this is what you can do with a servo motor and an LDR!
 
@@ -206,7 +206,7 @@ If you've made the circuit with an LDR, it's only one step further to connect yo
 
 For the touch & LED examples, wire up the breadboard like below. The alligator clip can also be a male/male jumper wire, as long as there is something that you can touch.
 
-![circuit](../assets\circuits\esp32s3-LED_touch.png)
+![circuit]({{ site.baseurl }}/assets\circuits\esp32s3-LED_touch.png)
 
 Here a jumper wire is used; when you touch the end of the wire, the LED lights up.
 
@@ -216,8 +216,8 @@ Here a jumper wire is used; when you touch the end of the wire, the LED lights u
 
 The touch & speaker examples can be wired up like below; in this example it's with a buzzer but it also works with a piezo buzzer like in the kit!
 
-![circuit](../assets\circuits\esp32s3-touch-speaker-alt.png)
-<!-- ![circuit](../assets\circuits\esp32s3-touch-speaker.png) -->
+![circuit]({{ site.baseurl }}/assets\circuits\esp32s3-touch-speaker-alt.png)
+<!-- ![circuit]({{ site.baseurl }}/assets\circuits\esp32s3-touch-speaker.png) -->
 
 The touch range example sounds like this:
 
@@ -233,7 +233,7 @@ You can also connect something conductive, like a conductive spool knitted sampl
 
 And if you want more touch sensors, just plug in more wires in the touch pins you want to use. I moved the speaker to the other side now so all touch inputs are on one side.
 
-![circuit](../assets\circuits\esp32s3-touch-speaker-multi.png)
+![circuit]({{ site.baseurl }}/assets\circuits\esp32s3-touch-speaker-multi.png)
 
 
 ## Circuit prototyping

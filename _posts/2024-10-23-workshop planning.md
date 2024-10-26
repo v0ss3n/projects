@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Workshop planning"
-permalink: "/wearable-art-workshop/"
+permalink: "/projects/wearable-art-workshop/"
 ---
 
 # Introduction
@@ -9,7 +9,6 @@ permalink: "/wearable-art-workshop/"
 ------------------------------------
 
 ## Workshop planning
-**Workshop day 1 - 13:00-17:00**
 
 Workshop day 1 | 13:00-17:00
 --- | ---
