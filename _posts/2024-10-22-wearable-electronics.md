@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "Developing your wearable art concept"
 permalink: "/projects/wearable-electronics/"
 ---

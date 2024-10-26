@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "Workshop planning"
 permalink: "/projects/wearable-art-workshop/"
 ---

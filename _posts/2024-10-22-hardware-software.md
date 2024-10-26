@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "Hardware & software"
 permalink: "/projects/hardware-software/"
 ---
@@ -31,7 +31,7 @@ Here is a soldering comic adaptation by Andie Nordgren that shows you the basics
 
 We are going to bring this to action with the header pins of the XIAO board, so we can easily prototype electronic circuits:
 
-![Soldering header pins](/assets/images/soldering.png)
+![Soldering header pins]({{ site.baseurl }}/assets/images/soldering.png)
 
 You can also make a flexible LDR voltage divider like this:
 
