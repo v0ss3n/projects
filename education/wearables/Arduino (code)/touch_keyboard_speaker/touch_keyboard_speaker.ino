@@ -23,10 +23,10 @@
 int speaker_pin = D7;  // Pin the LED is attached to
 
 // variables for storing the touch pins, values and thresholds. change threshold if needed
-int touch_pins[] = { T1, T2, T3, T4, T5, T6 };  // Pin that we're going to touch
-int touchValues[] = { 0, 0, 0, 0, 0, 0 };
-int thresholds[] = { 100000, 100000, 100000, 100000, 100000, 100000 };
-int pitches[] = { NOTE_A3, NOTE_B3, NOTE_C3, NOTE_D3, NOTE_E3, NOTE_F3 };
+int touch_pins[] = { T1, T2, T3, T4, T5 };  // Pin that we're going to touch
+int touchValues[] = { 0, 0, 0, 0, 0 };
+int thresholds[] = { 100000, 100000, 100000, 100000, 100000 };
+int pitches[] = { NOTE_A3, NOTE_B3, NOTE_C3, NOTE_D3, NOTE_E3 };
 
 // the setup function runs once when you press reset or power the board
 void setup() {
@@ -38,7 +38,8 @@ void setup() {
 
 // the loop function runs over and over again forever
 void loop() {
-  for (int i = 0; i < 6; i++) {
+    Serial.println("Touch values:");
+  for (int i = 0; i < 5; i++) {
     touchValues[i] = touchRead(touch_pins[i]);
     Serial.println(touchValues[i]);
     if (touchValues[i] > thresholds[i]) {

@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "Developing your wearable art concept"
+languages:
+- en
+- nl
 permalink: "/wearable-electronics/"
 ---
 
@@ -9,7 +12,7 @@ permalink: "/wearable-electronics/"
 </div>
 
 ## How to make things wearable?
-There is a few ingredients to make a succesful wearable, and they all work together. There is not a fixed place to start - some people work better with a thought-through concept, others work better when they start making. 
+There is a few ingredients to make a successful wearable, and they all work together. There is not a fixed place to start - some people work better with a thought-through concept, others work better when they start making. 
 
 - What's your **inspiration**? What's the concept, what do you want to say with your wearable piece of art? 
 - Where and how do you wear it? Pick a **part of the body** - are you making something for on your head? Around your arm? On your hand? How can you make it wearable for that body part? 
@@ -18,7 +21,7 @@ There is a few ingredients to make a succesful wearable, and they all work toget
     - Prototyping your electronics on a breadboard is the easiest
 - Pick your **materials** - what is it made of? Is it hard or soft? How do you attach it to the body? Prototype in 3D!
     - Make something wearable from scratch - i.e. with patterns, elastic, straps, velcro, etc.
-    - Build on something existing - i.e. on a glove or head band
+    - Build on something existing - i.e. on a glove or headband
 
 There are various ways to make something wearable. You can use all kinds of clips, hairbands, gloves, velcro, straps... Below you can find some of the available options.
 
@@ -36,39 +39,75 @@ Set the sewing machine to zigzag and carefully start sewing:
 
 ![]({{ site.baseurl }}/assets/images\IMG_8528.JPG)
 
+---
+
 - Metal wire 
 - Bending with plyers (see also <https://www.wikihow.com/Bend-Wire>)
+
+![Nastia Pilepchuk](https://i.pinimg.com/564x/b4/e3/0d/b4e30d020625ab3a89fae57f2306fad7.jpg)
+
+---
 
 - Fabric
 - Textile hardener
 - Hot air gun (for quick drying)
 
+![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cchobby.com%2Fmedia%2Finspiration%2Fimage%2Finspiration%2Fv11704_2.jpg&f=1&nofb=1&ipt=031e8e783ad7c53889900e5fd704a419fd3819c7ea78b7a6a58f1623b5517da8&ipo=images)
+
+---
+
 - Cardboard
 - Hot glue
+
+![](https://i.pinimg.com/564x/08/66/69/086669f93ef8ca9af61ecebac1008aac.jpg)
+
+---
 
 - Paper
 - Origami & other folding techniques
 
-- Paper
-- Papier-mâché
+![](https://i.pinimg.com/564x/61/5e/f7/615ef78c0fb45f272dd0c4d35deb84c5.jpg)
 
-- Metal wire frame
+---
+
+- Paper
+- Papier-mâché, paper pulp 
+
+![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.verycompostable.com%2Fwp-content%2Fuploads%2F2021%2F07%2F3dpaper-1200x630.1626878750.jpeg&f=1&nofb=1&ipt=bfade5bcbf1eb34db3df043d90dfb06754d5afcece3fd9b0e939ba71c2da6d97&ipo=images)
+
+---
+
+- Metal wire frame or other shapes 
 - Wrapping stretchy fabric around it
+
+![](https://i.pinimg.com/564x/df/a2/a3/dfa2a38d73e332d43ebc46f00efef69a.jpg)
+
+---
 
 - Fibers
 - Felting needles
 
+You can use felting to make 3D shapes:
+
+![]({{ site.baseurl }}/assets\images\IMG_1032.JPG)
+
+You can also work directly on a piece of clothing! You could make an e-textile pressure or touch sensor for example.
+
+![]({{ site.baseurl }}/assets\images\IMG_1015.JPG)
+
+---
+
+Other prototyping materials and techniques to explore:
+- Air drying modeling clay: clay modeling techniques & tools
+- Metal wire: jewelry making techniques, soldering 
+- Fabric & thread: sewing, textile craft techniques
+- Conductive fabric: soldering 
 - Embedding electronic components in clay
 - Sewing LEDs onto fabric 
 - Glueing 
 
-Other prototyping materials and techniques to explore:
-- air drying modeling clay: clay modeling techniques & tools
-- metal wire: jewelry making techniques, soldering 
-- fabric & thread: sewing, textile craft techniques
-- conductive fabric: soldering 
-
-<!-- Step 1 - drawing out system of input and output before programming -->
+---
+<!-- ## E-textile sensors -->
 
 ## Integrating electronics into wearables
 How do you go from a messy breadboard and wearable elements to electronics that you can wear? If you make something big, you often have some space to hide your electronics under something. If it's small, then you need other solutions. It's not always about how to make your circuit invisible, but rather how you can place your microcontroller and battery in relation to your input and output, in a way that looks natural or intentional. If you can't hide it, you can always make it part of the look! For example, if you want to make an earring with a motor, why not make another earring in which you can put your battery and microcontroller? Or you could have a microcontroller necklace that you can wear under your shirt, or on top if you make it look nice! If you make something to wear on your head, maybe you can hide your microcontroller and battery under a ponytail, or you can place the microcontroller and battery on a clip that you pin to the back inside of your shirt. 
@@ -135,6 +174,21 @@ Here, a subtle movement of the neck is already enough to turn on the lights.
   <source src="{{ site.baseurl }}/assets\videos\scarf2.mp4" type="video/mp4"></video>
 </div>
 
+
+### Keyboard glove
+This is an example of a very simple capacitive touch keyboard that you can wear. It's made with conductive tape on an existing glove. 
+
+![]({{ site.baseurl }}/assets\images\keyboard-glove.JPEG)
+
+The code is basically the same as the touch_keyboard_speaker.ino example, but with 5 instead of 6 touch sensors. When changing the amount of touch sensors, make sure you change all of the arrays by adding or removing values according to the amount you have (I spent 30 minutes trying to figure out why it was acting weird because of this).
+
+<div class="videowrapper"><video width="480" height="360" autoplay loop muted>
+  <source src="{{ site.baseurl }}/assets\videos\keyboard-glove.mp4" type="video/mp4"></video>
+</div>
+
+A next step would be to integrate the electronics and solder wires to the conductive tape instead of using alligator clips. 
+Another nice iteration would be to add an MP3 module with custom sounds, to go beyond the bleepy sounds from the tone function.
+
 ---
 
 ## More examples & inspiration
@@ -158,3 +212,4 @@ Have a look at [this project called Kinetic Wearables Toolkit by the Social Body
 
 [Second Skins Re-FREAM by Malou Beemer](https://www.maloubeemer.com/project/second-skins-re-fream/) shows integration of LEDs into garments, using textiles to diffuse the light. It also shows traces sewn with a sewing machine on the project page. 
 
+<!-- Fibers optics -->

@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "Workshop planning"
+languages:
+- en
+- nl
 permalink: "/wearable-art-workshop/"
 ---
 
@@ -45,3 +48,4 @@ End of day 2 goals:
 - Working electronics
 - Making electronics wearable (starting together with this)
 
+[Slides can be found here](https://docs.google.com/presentation/d/1L_AfOofsqsqNXKKB7UqnUVNtmDw93LX0V3JbKo8R1Fs/edit?usp=sharing)

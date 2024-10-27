@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "Hardware & software"
+languages:
+- en
+- nl
 permalink: "/hardware-software/"
 ---
 
