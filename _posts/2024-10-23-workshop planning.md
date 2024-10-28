@@ -29,7 +29,7 @@ Workshop day 2 | 13:00-17:00
 13:15-15:00 | Working on bringing the wearable art to life: bringing electronics & shapes together, making it wearable, integrating the circuit
 15:00-15:15 | Break
 15:15-16:30 | Finalizing prototypes: testing, troubleshooting, finishing touches 
-16:30-17:00 | Wearable art show! Documenting results & reflecting on the process
+16:30-17:00 | Wearable art show! Documenting results & reflecting on the process, drinks
 
 Learning goal | How
 --- | ---
@@ -38,14 +38,14 @@ Making electronics wearable | Integrating electronic circuits, using portable po
 Programming basics in Arduino IDE | Arduino IDE crash course - walkthrough for beginners
 Basics of electronics | 'Sketching in hardware': prototyping electronics and learning by doing, trying out different inputs/outputs or deep diving into one
 
-
 End of day 1 goals: 
-- a clear idea for a wearable
-- parts of the wearable without electronics done
-- working programmed electronics (doesn't have to be wireless, soldered or final yet, just a first working iteration)  
+- A clear idea for a wearable
+- Parts of the wearable without electronics done, shape tests and prototypes
+- Working programmed electronics (doesn't have to be wireless, soldered or final yet, just a first working iteration)  
 
 End of day 2 goals:
-- Working electronics
-- Making electronics wearable (starting together with this)
+- Working electronics, soldered & battery-powered
+- Electronics and design coming together in a wearable piece of art
+
 
 [Slides can be found here](https://docs.google.com/presentation/d/1L_AfOofsqsqNXKKB7UqnUVNtmDw93LX0V3JbKo8R1Fs/edit?usp=sharing)

@@ -15,7 +15,7 @@ You all received a kit with the following content:
 - Grove Shield for XIAO with battery management chip
 - Breadboard
 - Jumper wires (male/male & male/female)
-- Lithium ion battery (3.7V 600mA)
+- Lithium ion battery (3.7V 600mAh)
 - USB-C to USB-C or USB-A cable
 - LED
 - LDR
@@ -44,7 +44,7 @@ When soldering wires, make sure your connections are strong.
 
 ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F2fCTMZk-E7c%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=6440de36019c5034153c4e121eaf48b8862d4deac43539b38f02e11990f6221b&ipo=images)
 
-You can make a flexible LDR voltage divider like this:
+You could for example make a flexible LDR voltage divider like this:
 
 ![]({{ site.baseurl }}/assets\images\IMG_8552.JPG)
 
@@ -98,14 +98,13 @@ To prototype wearables, we're going to use the Grove Shield for XIAO, which make
 
 ![]({{ site.baseurl }}/assets\images\IMG_8524.JPG)
 
-You can always leave out the shield if it's too bulky for your final wearable once you know how you want to wire everything. 
+You can always leave out the shield if it's too bulky for your final wearable once you know how you want to wire everything. There is also protoboard available if you prefer to solder it all together. 
 
 ![](https://files.seeedstudio.com/wiki/Grove-Shield-for-Seeeduino-XIAO/img/pinout.png)
 
-To start out, we'll use the shield as a prototyping board together with a breadboard. You can plug in female jumper wires into the sockets to connect the data pins to your inputs and outputs, you can solder wires to the GPIO holes or you can solder sockets into the GPIO holes (like below) to plug in jumper wires to plug & play! 
+To start out, we'll use the shield as a prototyping board together with a breadboard. You can plug Grove cables into the sockets to connect the data pins to your inputs and outputs, you can solder wires to the GPIO holes or you can solder sockets into the GPIO holes (like below) to plug in jumper wires to plug & play! 
 
 ![]({{ site.baseurl }}/assets\images\IMG_8551.JPG)
-
 
 You can also just use the mini breadboard to start prototyping with, and leave the shield for later!
 
@@ -121,6 +120,11 @@ The battery is about the same size as the shield, so you could fold it like this
 I would cover the bottom of the board with tape to avoid making any short circuits, for example if you want to glue a metal clip to the base to make it wearable.
 
 ![]({{ site.baseurl }}/assets\images\IMG_8527.JPG)
+
+### Resistors
+For the LEDs, we are using a 67 Ohm current limiting resistor. The values for the resistor in series with an LED depend on a couple of factors (color, power supply voltage, current rating); 67 Ohm is based on a power supply voltage of 3.3V, an average voltage drop of 2V and a current rating of the LED of 20 mA. There's calculators for this online :-) If you use a bigger value resistor, it will still work, but the LED will shine a little less bright. If you use a smaller value resistor, the LED may shine a bit brighter, but it could also break in the long term (theoretically). 
+
+For the LDR there is a 4.7k Ohm resistor in your kit. I chose this value because it works well with the LDRs as they have a similar range. If you buy your own LDRs they may have different min and max values ​​so try it out or check the datasheet.
 
 ## Arduino code & circuits
 Example code can be found in the ```Arduino (code)``` folder. You can find examples on programmed and external, digital, analog and touch input, combined with light, motion or sound output. Below you can find how you should wire up the circuits on a breadboard. This is also described in the Arduino code files. Find out how they work in the Arduino code files too!
@@ -245,10 +249,6 @@ You can also connect something conductive, like a conductive spool knitted sampl
 And if you want more touch sensors, just plug in more wires in the touch pins you want to use. I moved the speaker to the other side now so all touch inputs are on one side.
 
 ![circuit]({{ site.baseurl }}/assets\circuits\esp32s3-touch-speaker-multi.png)
-
-
-## Circuit prototyping
-For the LEDs, we are using a 68 Ohm current limiting resistor. The values for the resistor in series with an LED depend on a couple of factors (color, power supply voltage, current rating); 68 Ohm is based on a power supply voltage of 3.3V, an average voltage drop of 2V and a current rating of the LED of 20 mA. There's calculators for this online :-) If you use a bigger value resistor, it will still work, but the LED will shine a little less bright. If you use a smaller value resistor, the LED may shine a bit brighter, but it could also break in the long term (theoretically). 
 
 ## Useful links
 - <https://docs.espressif.com/projects/arduino-esp32/en/latest/api/touch.html>
