@@ -1,9 +1,6 @@
 ---
 layout: post
 title: "Workshop planning"
-languages:
-- en
-- nl
 permalink: "/wearable-art-workshop/"
 ---
 

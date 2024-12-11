@@ -1,9 +1,6 @@
 ---
 layout: post
 title: "Developing your wearable art concept"
-languages:
-- en
-- nl
 permalink: "/wearable-electronics/"
 ---
 
