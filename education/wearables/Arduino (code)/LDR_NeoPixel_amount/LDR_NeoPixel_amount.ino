@@ -26,8 +26,8 @@
 #include <Adafruit_NeoPixel.h>
 
 // Pin Definitions
-const int sensor_pin = A2;      // LDR connected to A0
-const int neopixel_pin = A10;      // NeoPixel strip connected to A1
+const int sensor_pin = A0;      // LDR connected to A0
+const int neopixel_pin = A1;      // NeoPixel strip connected to A1
 
 // NeoPixel Setup
 const int numPixels = 45;   // Number of NeoPixels on the strip. Change according to the amount of NeoPixels. Keep the power budget in mind, see https://learn.adafruit.com/adafruit-neopixel-uberguide/powering-neopixels
@@ -43,7 +43,7 @@ void setup() {
   // Initialize Serial Monitor for debugging
   Serial.begin(115200);
 }
-c:\Users\mvoss\Documents\wearables\KineticWearablesToolkit-master\KineticWearablesToolkit-master\servo linear adapter drive wheel.stl c:\Users\mvoss\Documents\wearables\KineticWearablesToolkit-master\KineticWearablesToolkit-master\servo linear adapter flex base pin.stl c:\Users\mvoss\Documents\wearables\KineticWearablesToolkit-master\KineticWearablesToolkit-master\servo linear adapter flex base.stl c:\Users\mvoss\Documents\wearables\KineticWearablesToolkit-master\KineticWearablesToolkit-master\Servo linear adapter base.stl
+
 void loop() {
   // Read LDR value (range: 0 to 4095 on ESP32S3's 12-bit ADC)
   ldrValue = analogRead(sensor_pin);
