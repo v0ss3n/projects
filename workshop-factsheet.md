@@ -140,20 +140,20 @@ Zet alle materialen en tools klaar. Leg papier en potloden klaar voor het brains
 # Workshop
 Dit is een tweedaagse workshop wearable art.
 
-Workshop dag 1 | 13:00-17:00
+Workshop dag 1 | Wat? | Opmerkingen
 --- | ---
 13:00-13:15 | Binnenkomst, welkom
-13:15-13:45 | Introductie & presentatie (voorbeelden van mogelijke inputs/outputs, draagbare maaktechnieken, interacties) | [Presentatie](https://docs.google.com/presentation/d/1ME2McJVaysACMjvZqvqYNrnTcAuS8AELZ6eZsMklizI/edit?usp=sharing)
+13:15-13:45 | Introductie & presentatie (voorbeelden van mogelijke inputs/outputs, draagbare maaktechnieken, interacties) | [Presentatie](https://docs.google.com/presentation/d/1ME2McJVaysACMjvZqvqYNrnTcAuS8AELZ6eZsMklizI/edit?usp=sharing); [voorbeelden op de website](https://v0ss3n.github.io/projects/wearable-electronics/)
 13:45-14:15 | Ideevorming, brainstormen, schetsen | Leg pen en papier klaar; loop rond om te kijken wat iedereen wil maken en mee te denken
 14:15-15:00 | Crash course Elektronica & Arduino-programmering | Loop met de deelnemers door [de voorbereidende stappen](https://v0ss3n.github.io/projects/hardware-software/#setting-up-the-arduino-ide). [Begeleidende presentatie](https://docs.google.com/presentation/d/1AGPXkJWBf6cLnrpUOCS3_FByQYlOY5E3t-unRLCv0Cg/edit?usp=sharing)
 15:00-15:15 | Pauze
 15:15-16:45 | Eventueel doorgaan met de crash course en het prototyping van circuits, beginnen met (onderdelen van) het draagbare kunstwerk
 16:45-17:00 | Show & tell, opruimen
 
-Workshop dag 2 | 13:00-17:00
+Workshop dag 2 | Wat? | Opmerkingen
 --- | ---
 13:00-13:15 | Binnenkomst, welkom, wat heb je nodig om te beginnen?
-13:15-15:00 | Werken aan het tot leven brengen van de draagbare kunst: elektronica & vormen samenbrengen, het draagbaar maken, het integreren van het elektronische circuit
+13:15-15:00 | Werken aan het tot leven brengen van de draagbare kunst: elektronica & vormen samenbrengen, het draagbaar maken, het integreren van het elektronische circuit | [Integreren van elektronica op de website](https://v0ss3n.github.io/projects/wearable-electronics/#integrating-electronics-into-wearables)
 15:00-15:15 | Pauze
 15:15-16:30 | Prototypes afmaken: testen, troubleshooten, puntjes op de i
-16:30-17:00 | Wearable art show! Resultaten vastleggen & reflecteren op het proces, afsluiten met een drankje
+16:30-17:00 | Wearable art show! | Resultaten vastleggen & reflecteren op het proces, afsluiten met een drankje
