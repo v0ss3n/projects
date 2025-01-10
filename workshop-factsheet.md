@@ -22,6 +22,8 @@ Interactive wearables: prototyping electronic art on the body
 
 Deze OER is gelicenseerd onder Creative Commons 4.0 CC-BY Michelle Vossen
 
+Deze OER is ontwikkeld gedurende de artist residency bij Creative Coding Utrecht. Gefinancierd door Stimuleringsfonds Creatieve Industrie.
+
 ### Leeftijd / Doelgroep:
 
 De doelgroep voor deze workshop zijn jongeren tussen de 14 - 28 jaar
