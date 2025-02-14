@@ -1,8 +1,9 @@
 #include "Arduino.h"
 #include "DFRobotDFPlayerMini.h"
+#include "driver/touch_sensor.h"
 
-const int touchThreshold = 80000;                               // Threshold for the touch sensors
-const int touchPins[] = { T1, T2, T3, T4, T5, T6, T7, T8, T9 };  // Array with all of the used touch pins
+const int touchThreshold = 50000;                                // Threshold for the touch sensors
+const int touchPins[] = { T1, T2, T3, T4, T5, T6, T7, T8 };  // Array with all of the used touch pins
 const int numTouchPins = sizeof(touchPins) / sizeof(touchPins[0]);
 
 
@@ -20,10 +21,13 @@ bool isPlaying[numTouchPins] = { false };  // Array to track play/pause state fo
 DFRobotDFPlayerMini myDFPlayer;
 void printDetail(uint8_t type, int value);
 
+// Store last read values to detect freezing
+uint32_t lastTouchValues[8] = { 0 };
+
 void setup() {
 
   Serial.begin(115200);
-
+  delay(2000);
   FPSerial.begin(9600, SERIAL_8N1, /*rx =*/44, /*tx =*/43);
 
   Serial.println();
@@ -39,7 +43,7 @@ void setup() {
   }
   Serial.println(F("DFPlayer Mini online."));
 
-  myDFPlayer.setTimeOut(2500);  //Set serial communication timeout to 500ms
+  myDFPlayer.setTimeOut(500);  //Set serial communication timeout to 500ms
   myDFPlayer.volume(20);        //Set volume value (0~30).
   myDFPlayer.EQ(DFPLAYER_EQ_NORMAL);
   myDFPlayer.outputDevice(DFPLAYER_DEVICE_SD);
@@ -47,14 +51,23 @@ void setup() {
 
 void loop() {
 
+  int samePins = 0;
 
   if (myDFPlayer.available()) {
     printDetail(myDFPlayer.readType(), myDFPlayer.read());  // Print the detail message from DFPlayer to handle different errors and states.
   }
 
-  for (int i = 0; i < numTouchPins; i++) {
-    int touchValue = touchRead(touchPins[i]);
+  for (int i = 0; i < 8; i++) {
+    uint32_t touchValue = touchRead(touchPins[i]);
+    Serial.print("TouchPin ");
+    Serial.print(touchPins[i]);
+    Serial.print(": ");
     Serial.println(touchValue);
+
+    if (touchValue == lastTouchValues[i]) {
+      samePins++;
+    }
+    lastTouchValues[i] = touchValue;
     if (touchValue > touchThreshold) {
       if (!isPlaying[i]) {
         Serial.println("Should play song");
@@ -71,6 +84,11 @@ void loop() {
 
 
 
+  // All of the pins returned the same value, which means probably something is frozen.
+  if (samePins == 8) {
+    Serial.println("Restarting touch pad...");
+    touch_pad_fsm_start();
+  }
 
 
   // Small delay to avoid excessive serial output
