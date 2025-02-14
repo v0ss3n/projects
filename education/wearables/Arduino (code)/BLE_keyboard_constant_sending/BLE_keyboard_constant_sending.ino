@@ -17,13 +17,13 @@
 
   This example code is in the public domain.
 
-  https://v0ss3n.github.io/midimadness
+  https://v0ss3n.github.io/wearables
 */
 
 #include <BLEMIDI_Transport.h>       //BLE MIDI Transport library
 #include <hardware/BLEMIDI_ESP32.h>  //BLE ESP32 library
 
-BLEMIDI_CREATE_INSTANCE("MySynth", MIDI);  //make instance of BLEMIDI. Give this a recognizable name! Like your name? Alter ego?
+BLEMIDI_CREATE_INSTANCE("MichelleSynth", MIDI);  //make instance of BLEMIDI. Give this a recognizable name! Like your name? Alter ego?
 
 // constants and variables
 int midiNote;
